@@ -1,0 +1,18 @@
+<!-- <h1>{{serverId}}</h1>
+<h1>{{getServer()}}</h1>
+<button class="btn btn-primary" [disabled]="!allowButton"
+(click)="onCreateServer()"
+> allow server</button>
+<p>{{serverStatus}}</p>
+<p [innerText]="allowButton">
+
+</p> -->
+<!-- <input type="text" [(ngModel)]= "name">
+<p>{{name}}</p>
+<button class="btn btn-primary" [disabled]="!name"
+  [ngClass]="{online:name}"
+(click)="click()"
+> allow server</button> -->
+<button class="btn btn-primary" (click)="fetchDetails()" > Display details</button>
+<p *ngIf="clickedButton">hi therer this is fun learning Angular 678</p>
+<div *ngFor="let click of clicked; let i = index" [ngClass]="{'hello': clicked.indexOf(click) > 5,'hello1':clicked.indexOf(click) > 2}"[ngStyle]="{backgroundColor:click > 4?'blue':'white'}">{{click}}</div>
